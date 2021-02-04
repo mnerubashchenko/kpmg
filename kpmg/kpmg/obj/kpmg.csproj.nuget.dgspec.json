@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg.csproj": {}
+    "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg\\kpmg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg.csproj": {
+    "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg\\kpmg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg.csproj",
+        "projectUniqueName": "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg\\kpmg.csproj",
         "projectName": "kpmg",
-        "projectPath": "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg.csproj",
+        "projectPath": "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg\\kpmg.csproj",
         "packagesPath": "C:\\Users\\mneru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\obj\\",
+        "outputPath": "C:\\Users\\mneru\\Desktop\\kpmg\\kpmg\\kpmg\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

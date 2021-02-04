@@ -12,6 +12,6 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   getData(): Observable<Person[]>{
-    return this.http.get<Person[]>('https://localhost:5001/' + environment.URL_API)
+    return this.http.get<Person[]>(environment.URL_API + 'api/values')
   }
 }
