@@ -1,0 +1,21 @@
+CREATE DATABASE Employers
+
+USE Employers
+
+CREATE TABLE People
+(ID UNIQUEIDENTIFIER PRIMARY KEY DEFAULT newsequentialid(),
+Name VARCHAR (30),
+LastName VARCHAR (30), 
+Birthday DATE);
+
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000000', 'Василий', 'Васильев', '1999-02-01');
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000001', 'Пётр', 'Петров', '1998-02-05');
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000002', 'Иван', 'Иванов', '1988-02-06');
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000003', 'Светлана', 'Смирнова', '1987-02-07');
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000004', 'Максим', 'Николаев', '1988-02-12');
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000005', 'Вера', 'Никитина', '1988-02-13');
+INSERT INTO People VALUES ('00000000-0000-0000-0000-000000000006', 'Павел', 'Попов', '1988-02-09');
+
+SELECT Name as 'Имя', LastName as 'Фамилия', CONCAT(DAY(Birthday), ', ', DATENAME(month, MONTH(BIRTHDAY))) as 'День рождения' FROM People WHERE DAY(Birthday) = DAY(DATEADD(day, 1, GETDATE())) 
+OR DAY(Birthday) = DAY(DATEADD(day, 2, GETDATE()))
+OR DAY(Birthday) = DAY(DATEADD(day, 3, GETDATE()))
